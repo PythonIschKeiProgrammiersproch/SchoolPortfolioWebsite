@@ -27,9 +27,7 @@ Projektarbeit Webtauftritt mit HTML und CSS.
 ## Zusammenfassung
 *Wird gemacht sobald das Projekt fertig ist.*
 
-## Lizenz
-MIT License
-
+## Lizenz ([MIT](https://opensource.org/license/mit))
 Copyright (c) 2024 - Schlegel Nils
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
