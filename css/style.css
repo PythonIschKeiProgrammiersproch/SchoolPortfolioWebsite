@@ -1,0 +1,133 @@
+/*
+ * Global Styles
+ */
+
+:root {
+    --base: #121212;
+    --base-dark: #000000;
+    --primary: #9568D9;
+    --secondary: #B067AA;
+    --accent: #5569CF;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+img {
+    user-select: none;
+}
+
+/*
+ * Simple Classes
+ */
+
+.bg-base {
+    background-color: var(--base);
+}
+
+.bg-base-dark {
+    background-color: var(--base-dark);
+}
+
+.text-white {
+    color: white;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.h-16 {
+    height: 4rem;
+}
+
+.h-24 {
+    height: 6rem;
+}
+
+.w-2\/3 {
+    width: 66.6%;
+}
+
+.w-1\/2 {
+    width: 50%;
+}
+
+.w-3\/4 {
+    width: 75%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.select-none {
+    user-select: none;
+}
+
+.space-x-6 * {
+    margin-left: 1.5rem;
+}
+
+.space-x-6 *:first-child {
+    margin-left: 0;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+/*
+ * Components
+ */
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.3rem;
+    border-radius: 0.8rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.8);
+}
