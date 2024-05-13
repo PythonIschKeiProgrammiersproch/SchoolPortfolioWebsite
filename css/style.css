@@ -39,6 +39,10 @@ img {
     color: var(--primary);
 }
 
+.text-2xl {
+    font-size: xx-large;
+}
+
 .w-screen {
     width: 100vw;
 }
@@ -115,6 +119,55 @@ img {
     text-decoration: none;
 }
 
+.sm\:visible {
+    height: 0;
+    visibility: hidden;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.justify-self-start {
+    justify-self: start;
+}
+
+.self-start {
+    align-self: start;
+}
+
+.self-end {
+    align-self: end;
+}
+
+.border-none {
+    border: none;
+}
+
+.right-3 {
+    right: 1.9rem;
+}
+
+.top-5 {
+    top: 0.7rem;
+}
+
+.top-3 {
+    top: 0.02rem;
+}
+
+.left-3 {
+    left: 0.7rem;
+}
+
 /*
  * Components
  */
@@ -129,5 +182,20 @@ img {
 
 .nav-link:hover {
     background-color: #121212;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*
+ * Responsive Designs
+ */
+
+@media only screen and (max-width: 720px) {
+    .sm\:hidden {
+        height: 0;
+        visibility: hidden;
+    }
+    .sm\:visible {
+        visibility: visible;
+        height: max-content;
+    }
 }
