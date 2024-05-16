@@ -18,7 +18,6 @@ window.onload = function setupPage() {
 }
 
 function toggleBurgerMenu() {
-    console.log("Toggling Burger Menu List");
     document.getElementById("menu-list").classList.toggle("sm:hidden");
     if (document.getElementById("menu-button").innerHTML === '<i class="fa-solid fa-bars"></i>') {
         document.getElementById("menu-button").innerHTML = '<i class="fa-solid fa-xmark"></i>';

@@ -7,12 +7,13 @@
     --base-dark: #000000;
     --primary: #9568D9;
     --secondary: #B067AA;
-    --accent: #5569CF;
+    --accent: #2d2d34;
 }
 
 body {
     font-family: sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -67,6 +68,14 @@ img {
     height: 6rem;
 }
 
+.ml-max {
+    margin-left: 40%;
+}
+
+.h-40 {
+    height: 12rem;
+}
+
 .w-2\/3 {
     width: 66.6%;
 }
@@ -76,7 +85,27 @@ img {
 }
 
 .w-3\/4 {
-    width: 75%;
+    width: 75vw;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mr-4 {
+    margin-right: 1rem;
+}
+
+.text-gray {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-1\/5 {
+    width: 20%;
 }
 
 .flex {
@@ -85,6 +114,10 @@ img {
 
 .flex-col {
     flex-direction: column;
+}
+
+.p-3 {
+    padding: 1.2rem;
 }
 
 .flex-row {
@@ -113,6 +146,22 @@ img {
 
 .space-x-6 *:first-child {
     margin-left: 0;
+}
+
+.space-y-1 * {
+    margin-top: 0.4rem;
+}
+
+.space-y-1 *:first-child {
+    margin-top: 0;
+}
+
+.text-lg {
+    font-size: large;
+}
+
+.font-bold {
+    font-weight: bold;
 }
 
 .decoration-none {
@@ -156,6 +205,10 @@ img {
     right: 1.9rem;
 }
 
+.bg-transparent {
+    background-color: transparent;
+}
+
 .top-5 {
     top: 0.7rem;
 }
@@ -168,6 +221,17 @@ img {
     left: 0.7rem;
 }
 
+.list-none {
+    list-style: none;
+}
+
+.mobile-nav-list li {
+    width: 100vw;
+    padding: 0.2rem;
+    height: fit-content;
+    background-color: var(--base-dark);
+}
+
 /*
  * Components
  */
@@ -178,11 +242,11 @@ img {
     padding: 0.8rem 1.3rem;
     border-radius: 0.8rem;
     transition: all 0.2s ease-in-out;
+    margin-bottom: 0.3rem;
 }
 
 .nav-link:hover {
-    background-color: #121212;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--accent);
 }
 
 /*
@@ -190,12 +254,40 @@ img {
  */
 
 @media only screen and (max-width: 720px) {
+    .nav-link {
+        margin-bottom: 0.3rem;
+        width: 100% ;
+        padding: 0.6rem;
+    }
+
+    .sm\:flex-col {
+        flex-direction: column;
+    }
+
     .sm\:hidden {
         height: 0;
+        width: 0;
         visibility: hidden;
     }
+
     .sm\:visible {
         visibility: visible;
         height: max-content;
+    }
+
+    .sm\:space-y-6 * {
+        margin-top: 0.5rem;
+    }
+
+    .sm\:space-y-6 *:first-child {
+        margin-top: 0;
+    }
+
+    .sm\:w-full {
+        width: 100%;
+    }
+
+    .sm\:text-center {
+        text-align: center;
     }
 }
