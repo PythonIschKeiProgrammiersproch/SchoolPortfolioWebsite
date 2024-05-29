@@ -28,13 +28,21 @@ function toggleBurgerMenu() {
         menuList.id = "menu-list";
         menuList.className = "list-none flex flex-col w-full mobile-nav-list";
 
-        const menuItems = ["Home", "Fähigkeiten", "Portfolio", "Kontakt"];
-        menuItems.forEach(item => {
+        const menuItems = {
+            "Home": "/",
+            "Fähigkeiten": "/skills.html",
+            "Portfolio": "/portfolio.html",
+            "Kontakt": "/contact.html"
+        };
+
+        for (const [displayName, href] of Object.entries(menuItems)) {
             const link = document.createElement('a');
             link.className = "nav-link";
-            link.textContent = item;
+            link.textContent = displayName;
+            link.href = href;
             menuList.appendChild(link);
-        });
+        }
+
 
         container.appendChild(menuList);
 
