@@ -221,7 +221,7 @@ img {
 
 @media only screen and (max-width: 720px) {
     body {
-        width:91vw; /* Komische Angabe, jedoch hat es bei 100vw bei mir einen horizontalen overflow gegeben */
+        width:99%; /* Komische Angabe, jedoch hat es bei 100vw bei mir einen horizontalen overflow gegeben */
     }
 
     .nav-link {
