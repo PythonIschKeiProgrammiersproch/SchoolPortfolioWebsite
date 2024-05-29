@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon-precomposed" href="/assets/nils-logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body class="bg-base text-white w-screen h-full min-h-screen overflow-x-hidden">
+<body class="bg-base text-white w-screen h-full min-h-screen">
 <nav class="sm:hidden w-screen h-24 bg-base-dark flex flex-row justify-center items-center select-none">
     <a href="/index.html" class="flex flex-row decoration-none text-white">
         <img src="/assets/nils-logo.jpg" alt="Logo Nils Schlegel" class="h-16">
@@ -39,18 +39,12 @@
     </div>
 </nav>
 
-<nav class="sm:visible flex flex-col w-screen items-center bg-base-dark">
-    <div class="w-full mr-4 flex justify-end">
-        <button id="menu-button" class="sm:visible fixed top-5 left-3 text-2xl bg-transparent text-white border-none"><i
+<nav id="mobilde-nav-container" class="sm:visible fixed top-0 left-0 flex flex-col w-full items-center bg-base-dark">
+    <div class="l mr-4 flex justify-between items-center w-4/5">
+        <button id="menu-button" class="sm:visible text-2xl bg-transparent text-white border-none"><i
                 class="fa-solid fa-bars"></i></button>
         <h2>Nils Schlegel</h2>
     </div>
-    <ul id="menu-list" class="sm:hidden list-none w-screen flex flex-col justify-center items-center mobile-nav-list">
-        <a class="nav-link">Home</a>
-        <a class="nav-link">Fähigkeiten</a>
-        <a class="nav-link">Portfolio</a>
-        <a class="nav-link">Kontakt</a>
-    </ul>
 </nav>
 
 <main class="flex min-h-screen h-full flex-row justify-center items-center w-screen space-x-6 h-full">
@@ -59,19 +53,19 @@
 <footer class="bg-base-dark w-screen h-full p-3 flex sm:flex-col sm:space-y-6 justify-center ">
     <div class="flex flex-col w-1/5 space-y-1 sm:w-full">
         <a class="text-gray font-bold">PAGES</a>
-        <a>Home</a>
-        <a>Fähigkeiten</a>
-        <a>Portfolio</a>
-        <a>Kontakt</a>
+        <a class="link" href="#">Home</a>
+        <a class="link" href="#">Fähigkeiten</a>
+        <a class="link" href="#">Portfolio</a>
+        <a class="link" href="#">Kontakt</a>
     </div>
     <div class="flex flex-col w-1/5 space-y-1 sm:w-full">
-        <a class="text-gray font-bold">RESOURCES</a>
-        <a>GitHub</a>
-        <a>Figma</a>
-        <a>Website Diagram</a>
+        <a class="text-gray font-bold">RESSOURCES</a>
+        <a class="link" href="#">GitHub</a>
+        <a class="link" href="#">Figma</a>
+        <a class="link" href="#">Website Diagram</a>
     </div>
     <div class="flex flex-col w-1/5 space-y-1 sm:w-full">
-        <a class="text-gray font-bold">Other</a>
+        <a class="text-gray font-bold">OTHER</a>
         <a>Author: Nils Schlegel</a>
         <a>Module: 293</a>
         <a>Copyright ©️ 2024 | Nils Schlegel</a>

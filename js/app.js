@@ -18,10 +18,41 @@ window.onload = function setupPage() {
 }
 
 function toggleBurgerMenu() {
-    document.getElementById("menu-list").classList.toggle("sm:hidden");
-    if (document.getElementById("menu-button").innerHTML === '<i class="fa-solid fa-bars"></i>') {
-        document.getElementById("menu-button").innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    const menuButton = document.getElementById("menu-button");
+    const container = document.getElementById("mobilde-nav-container");
+
+    if (menuButton.innerHTML === '<i class="fa-solid fa-bars"></i>') {
+        menuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+
+        const menuList = document.createElement('ul');
+        menuList.id = "menu-list";
+        menuList.className = "list-none flex flex-col w-full mobile-nav-list";
+
+        const menuItems = ["Home", "Fähigkeiten", "Portfolio", "Kontakt"];
+        menuItems.forEach(item => {
+            const link = document.createElement('a');
+            link.className = "nav-link";
+            link.textContent = item;
+            menuList.appendChild(link);
+        });
+
+        container.appendChild(menuList);
+
+        requestAnimationFrame(() => {
+            menuList.classList.add('open');
+        });
     } else {
-        document.getElementById("menu-button").innerHTML = '<i class="fa-solid fa-bars"></i>';
+        const menuList = document.getElementById("menu-list");
+        if (menuList) {
+            menuList.classList.remove('open');
+            menuList.classList.add('closing');
+
+            menuList.addEventListener('transitionend', () => {
+                if (menuList.parentNode) {
+                    menuList.parentNode.removeChild(menuList);
+                }
+            }, { once: true });
+        }
+        menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
     }
 }
