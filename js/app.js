@@ -59,7 +59,7 @@ function toggleBurgerMenu() {
                 if (menuList.parentNode) {
                     menuList.parentNode.removeChild(menuList);
                 }
-            }, { once: true });
+            }, {once: true});
         }
         menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
     }
