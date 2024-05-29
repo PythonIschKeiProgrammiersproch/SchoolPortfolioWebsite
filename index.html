@@ -25,8 +25,8 @@
     <link rel="apple-touch-icon-precomposed" href="/assets/nils-logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body class="bg-base text-white w-screen h-full min-h-screen">
-<nav class="sm:hidden w-screen h-24 bg-base-dark flex flex-row justify-center items-center select-none">
+<body class="bg-base text-white h-full min-h-screen">
+<nav aria-label="Desktop Navbar" class="sm:hidden w-full h-24 bg-base-dark flex flex-row justify-center items-center select-none">
     <a href="/index.html" class="flex flex-row decoration-none text-white">
         <img src="/assets/nils-logo.jpg" alt="Logo Nils Schlegel" class="h-16">
         <h1>Nils Schlegel</h1>
@@ -39,18 +39,18 @@
     </div>
 </nav>
 
-<nav id="mobilde-nav-container" class="sm:visible fixed top-0 left-0 flex flex-col w-full items-center bg-base-dark">
-    <div class="l mr-4 flex justify-between items-center w-4/5">
+<nav aria-label="Mobile Navbar" id="mobilde-nav-container" class="sm:visible fixed top-0 left-0 flex flex-col w-full items-center bg-base-dark">
+    <div class="l mr-4 flex justify-between items-center w-5/6">
         <button id="menu-button" class="sm:visible text-2xl bg-transparent text-white border-none"><i
                 class="fa-solid fa-bars"></i></button>
         <h2>Nils Schlegel</h2>
     </div>
 </nav>
 
-<main class="flex min-h-screen h-full flex-row justify-center items-center w-screen space-x-6 h-full">
+<main class="flex min-h-screen h-full flex-row justify-center items-center w-full space-x-6 h-full">
 
 </main>
-<footer class="bg-base-dark w-screen h-full p-3 flex sm:flex-col sm:space-y-6 justify-center ">
+<footer class="bg-base-dark w-full h-full p-3 flex sm:flex-col sm:space-y-6 justify-center ">
     <div class="flex flex-col w-1/5 space-y-1 sm:w-full">
         <a class="text-gray font-bold">PAGES</a>
         <a class="link" href="#">Home</a>
