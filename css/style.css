@@ -208,6 +208,10 @@ button {
     width: 33.3%;
 }
 
+.lg\:p-0 {
+    padding: 0;
+}
+
 /*
  * Components
  */
@@ -253,6 +257,18 @@ button {
  * Responsive Designs
  */
 @media only screen and (max-width: 720px) {
+    .sm\:space-y-1 > * {
+        margin-top: 0.4rem;
+    }
+
+    .sm\:space-y-1 *:first-child {
+        margin-top: 0;
+    }
+
+    .sm\:p-3 {
+        padding: 1rem;
+    }
+
     .sm\:mt-24 {
         margin-top: 6rem;
     }

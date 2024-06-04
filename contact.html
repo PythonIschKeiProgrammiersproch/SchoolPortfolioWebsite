@@ -53,17 +53,17 @@
 <main class="flex min-h-screen sm:flex-col h-full flex-col justify-center items-center sm:w-full w-2/3 h-full">
     <h1 class="text-4xl">Kontakt</h1>
     <form class="flex space-y-1 flex-col justify-center items-center sm:w-full w-2/3">
-        <div class="flex space-y-1 flex-col w-2/3 justify-center items-center">
-            <input class="w-5/12 sm:w-full" placeholder="Name" type="text">
-            <input class="w-5/12 sm:w-full" placeholder="Nachname" type="text">
+        <div class="flex sm:space-y-1 sm:flex-col w-2/3 justify-center items-center">
+            <input class="w-1/2 sm:w-full" placeholder="Name" type="text">
+            <input class="w-1/2 sm:w-full" placeholder="Nachname" type="text">
+        </div>
+        <div class="flex sm:space-y-1 sm:flex-col w-2/3 justify-center items-center">
+            <input class="w-1/2 sm:w-full" placeholder="E-Mail" type="email">
+            <input class="w-1/2 sm:w-full" placeholder="Telefonnummer" type="tel">
         </div>
         <div class="flex space-y-1 flex-col w-2/3 justify-center items-center">
-            <input class="w-5/12 sm:w-full" placeholder="E-Mail" type="email">
-            <input class="w-5/12 sm:w-full" placeholder="Telefonnummer" type="tel">
-        </div>
-        <div class="flex space-y-1 flex-col w-2/3 justify-center items-center">
-            <textarea class="h-24 sm:w-full" placeholder="Nachricht"></textarea>
-            <button class="sm:w-full" type="submit">Send</button>
+            <textarea class="h-24 w-full lg:p-0 sm:p-3" placeholder="Nachricht"></textarea>
+            <button class="w-full" type="submit">Send</button>
         </div>
     </form>
 </main>
