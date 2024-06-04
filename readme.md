@@ -9,8 +9,6 @@ Projektarbeit Webtauftritt mit HTML und CSS.
 
 [Ressourcen](#Ressourcen)
 
-[Zusammenfassung](#Zusammenfassung)
-
 [Lizenz](#Lizenz)
 
 ## Technologien
@@ -24,10 +22,6 @@ Projektarbeit Webtauftritt mit HTML und CSS.
 - [Figma](https://www.figma.com/file/xOAR6n6WWYAAZ1L2Jmprem/Untitled?type=whiteboard&node-id=0%3A1&t=LCgJNejhPS6lzD4W-1)
 - [Hosted Website](https://nils-schlegel.pages.dev)
 - [ModulBaukasten](https://www.modulbaukasten.ch/module/293/1/de-DE?title=Webauftritt-erstellen-und-veröffentlichen)
-
-## Zusammenfassung
-
-*Wird gemacht, sobald das Projekt fertig ist.*
 
 ## Lizenz
 
