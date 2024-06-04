@@ -19,7 +19,7 @@ window.onload = function setupPage() {
 
 function toggleBurgerMenu() {
     const menuButton = document.getElementById("menu-button");
-    const container = document.getElementById("mobilde-nav-container");
+    const container = document.getElementById("mobile-nav-container");
 
     if (menuButton.innerHTML === '<i class="fa-solid fa-bars"></i>') {
         menuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';

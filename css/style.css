@@ -25,7 +25,7 @@ img {
 
 input,
 textarea,
-button{
+button {
     border: none;
     outline: none;
     background: var(--base-dark);
@@ -253,6 +253,23 @@ button{
  * Responsive Designs
  */
 @media only screen and (max-width: 720px) {
+    .sm\:mt-24 {
+        margin-top: 6rem;
+    }
+
+    .sm\:line-bottom {
+        padding-bottom: 2rem;
+        border-bottom: 3px solid var(--primary);
+    }
+
+    .sm\:line-bottom-next {
+        padding-top: 3rem;
+    }
+
+    .sm\:mb-6 {
+        margin-bottom: 1.5rem;
+    }
+
     body {
         width: 100%; /* Adjusted to prevent horizontal overflow */
     }
